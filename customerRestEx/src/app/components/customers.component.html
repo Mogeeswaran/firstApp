@@ -1,0 +1,16 @@
+<table border="1" cellpadding="10px" cellspacing="10px" align="center">
+    <tr>
+        <th>SNO</th>
+        <th>Name</th>
+        <th>City</th>
+        <th>Country</th>
+    </tr>
+
+    <tr *ngFor="let obj of data.records; let i = index">
+        <td>{{i+1}}</td>
+        <td>{{obj.Name}}</td>
+        <td>{{obj.City}}</td>
+        <td>{{obj.Country}}</td>
+    </tr>
+
+</table>
